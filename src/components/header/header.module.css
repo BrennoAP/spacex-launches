@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+a {
+    height: 100%;
+    width: 60vh;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+
+}
