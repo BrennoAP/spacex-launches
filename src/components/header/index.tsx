@@ -8,7 +8,7 @@ export default function Header() {
         <>
          <header className={styles.container}>
             
-             <Link classname={styles.linkstyle} to="/">
+             <Link className={styles.linkstyle} to="/">
                 <img className={styles.banner} src={imgLogo} alt="logo da spaceX e um foquete com a terra ao fundo" />
             </Link>
            
