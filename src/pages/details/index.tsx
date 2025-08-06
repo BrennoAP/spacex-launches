@@ -1,8 +1,8 @@
 
-export default function Detail() {
+export default function Details() {
     
     return(
-        <p>detail</p>
+        <p>details</p>
     )
 
 }

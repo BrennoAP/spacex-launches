@@ -1,6 +1,6 @@
 .container{
 
-    margin: 50px;
+    margin: 50px 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,12 +11,12 @@
 
     width: 50%;
     display: flex;
-    gap: 24px;
+    gap: 20px;
 }
 
 .form input{
     width: 100%;
-    height: 44px;
+    height: 32px;
     border: 0;
     padding: 0 8px;
     border-radius: 4px;
@@ -24,4 +24,94 @@
 }
 .form button{
     background: transparent;
+    
+}
+
+.tcontainer{
+    
+    text-align: center;
+    
+
+}
+
+table {
+
+    border-collapse: separate;
+    border-spacing: 0 14px;
+    margin:0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+
+}
+
+table-caption{
+    font-size: 16px;
+    margin: 0.5em 0 .75em;
+}
+
+.th{
+    color: #fff;
+
+}
+
+.tr{
+
+    background-color: #1d1c20;    
+    
+}
+
+td{
+    padding: 6px;
+}
+
+td:first-child,
+th:first-child{
+    border-radius: 12px 0 0 12px;
+}
+
+th:last-child,
+td:last-child{
+    border-radius: 0 12px 12px 0;
+}
+
+table td,
+table th{
+
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.tdlabel{
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.tdSucces{
+    color: #12f98a;
+}
+
+.tdFailure{
+
+    color: #f91257;
+}
+
+.btnMais{
+
+    background-color: #30beff;
+    padding: 8px 24px;
+    color: #fff;
+    
+    border-radius: 8px;
+    text-align: center;
+
+
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
 }
