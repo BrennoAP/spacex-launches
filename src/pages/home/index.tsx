@@ -91,7 +91,7 @@ const handleSort = () => setSortData((prevOrder) => (prevOrder === 'asc' ? 'des'
         e.preventDefault()
         if(textInput ==='') return
 
-        navigate(`/details/${textInput}`)
+        navigate(`/rockets/${textInput}`)
 
     }
 
@@ -101,7 +101,7 @@ const handleSort = () => setSortData((prevOrder) => (prevOrder === 'asc' ? 'des'
         <>
         <main className={style.container}>
             <form className={style.form}   onSubmit={handleSubmit}>
-                <input type="text" placeholder="digite o nome de um foguete ou missão" 
+                <input type="text" placeholder="digite o nome de um foguete e clique na lupa para mais informações" 
                 value={textInput}   
                 onChange={(e)=> setTextInput(e.target.value)}/>
                 <button type="submit">
@@ -123,7 +123,7 @@ const handleSort = () => setSortData((prevOrder) => (prevOrder === 'asc' ? 'des'
                     <tr className={style.tr} key={launch.id}>
                         <td className={style.tdlabel} data-label="Missao">
                             <div className={style.name}>
-                                <Link to={`/details/${launch.rocket}`}>
+                                <Link to={`/mission/${launch.id}`}>
                                     <span>{launch.name}</span>
                                 </Link>
                             </div>

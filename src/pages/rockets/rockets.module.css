@@ -1,0 +1,39 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #101010;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #30beff;
+  text-align: center;
+}
+
+.detail {
+  margin: 12px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.detail strong {
+  color: #12f98a;
+}
+
+.backLink {
+  display: inline-block;
+  margin-top: 24px;
+  text-decoration: none;
+  color: #30beff;
+  transition: color 0.2s ease-in-out;
+}
+
+.backLink:hover {
+  color: #fff;
+}

@@ -30,6 +30,7 @@
 .tcontainer{
     
     text-align: center;
+    font-size: 18px;
     
 
 }
@@ -86,8 +87,19 @@ table th{
 
 .tdlabel{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
+}
+
+.name:hover{
+
+    transform: scale(1.2);
+    
+    transition: transform 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+.name:hover span {
+   color: #0da6ddf2;
 }
 
 .tdSucces{
@@ -119,3 +131,4 @@ table th{
 .btnOrder{
     cursor: pointer;
 }
+
