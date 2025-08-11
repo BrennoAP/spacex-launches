@@ -33,7 +33,7 @@ type Rocket = {
   const [launchesList,setLaunchesList] = useState(10)
   const [sortData,setSortData] = useState<'asc'| 'des'>('asc')
 
-  useEffect(() => {
+  useEffect(() => { //optei por não usar axios pois não achei necessário 
     async function fetchData() {
   try {
         const [launchesRes, rocketsRes] = await Promise.all([
@@ -78,7 +78,6 @@ type Rocket = {
 const handleSort = () => setSortData((prevOrder) => (prevOrder === 'asc' ? 'des' : 'asc'));
 
 
-  //fim do fetch
 
 
   //listando os launches para paginação com botão
@@ -89,7 +88,7 @@ const handleSort = () => setSortData((prevOrder) => (prevOrder === 'asc' ? 'des'
     const handleSubmit = (e:FormEvent) => {
 
         e.preventDefault()
-        if(textInput ==='') return
+        if(textInput ==='') return   //apenas não faz nada se não tiver algo no campo de texto
 
         navigate(`/rockets/${textInput}`)
 
@@ -103,7 +102,7 @@ const handleSort = () => setSortData((prevOrder) => (prevOrder === 'asc' ? 'des'
             <form className={style.form}   onSubmit={handleSubmit}>
                 <input type="text" placeholder="digite o nome de um foguete e clique na lupa para mais informações" 
                 value={textInput}   
-                onChange={(e)=> setTextInput(e.target.value)}/>
+                onChange={(e)=> setTextInput(e.target.value)}/> 
                 <button type="submit">
                     <BsSearch size={30} color="#fff" />
                 </button>
@@ -146,14 +145,14 @@ const handleSort = () => setSortData((prevOrder) => (prevOrder === 'asc' ? 'des'
             </table>
             <div className={style.btnContainer}>
             <button className={style.btnMais} onClick={
-                () => setLaunchesList( launchesList + 10)}>
+                () => setLaunchesList( launchesList + 10)}> 
                 carregar mais
             </button>
             </div>
 
 </>
-
-        
+ //eu poderia usar useRef ou Debouce no onChange, se fosse uma aplicação mais complexa...
+ //a paginação carrega mais 10 entradas,não existem muitos lançamentos, cerca de 200
     )
 
 }

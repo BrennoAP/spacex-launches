@@ -11,3 +11,5 @@ export default function Layout() {
     )
 
 }
+
+//usando o outlet para manter o header em todas as paginas, com exeção da notfound

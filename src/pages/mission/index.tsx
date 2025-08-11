@@ -2,6 +2,8 @@ import { useParams, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import styles from "./mission.module.css"
 
+
+//pensei tambem em usar uma interface
 type Launch = {
   name: string
   details: string | null
@@ -47,7 +49,7 @@ export default function Mission() {
       <h1>{mission.name}</h1>
 
       {mission.links.patch.small && (
-        <img src={mission.links.patch.small} alt={`Logo da missão ${mission.name}`} />
+        <img src={mission.links.patch.small} alt={`Logo da missão ${mission.name}`} /> // a api retorna uma url com a imagem que vive fora do ar
       )}
 
       <p><strong>Detalhes:</strong> {mission.details || "Sem detalhes disponíveis."}</p>

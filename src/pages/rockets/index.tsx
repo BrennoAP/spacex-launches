@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import styles from "./rockets.module.css"
 
+//aqui eu usei interface
 interface Rocket {
   name: string;
   description: string;
@@ -24,7 +25,7 @@ export default function RocketDetails() {
 
   useEffect(() => {
     async function fetchRocket() {
-      const res = await fetch('https://api.spacexdata.com/v4/rockets');
+      const res = await fetch('https://api.spacexdata.com/v4/rockets'); //usando a v4 da api pois a v5 apresenta problemas
       const data: Rocket[] = await res.json();
 
       // Normaliza para comparar com ou sem maiúsculas

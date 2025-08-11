@@ -18,3 +18,5 @@ export default function Header() {
     )
 
 }
+
+//o header é basicamente uma imagem, testei 3 pra ver qual fica melhor, escolhi a que combina melhor com o fundo

@@ -12,3 +12,5 @@ export default function NotFound() {
     </div>
   );
 }
+
+//precisei reconfiguar o deploy do projeto pra que a pagina funcionasse no github pages
