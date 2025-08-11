@@ -38,7 +38,9 @@ export default function RocketDetails() {
     fetchRocket();
   }, [id]);
 
-  if (!rocket) return <p>Foguete não encontrado...</p>;
+  if (!rocket) return <div className={styles.container}><p>Foguete não encontrado...
+    <span><Link to="/" className={styles.backLink}>← Voltar</Link></span>
+    </p></div> ;
 
   return (
     <div>
