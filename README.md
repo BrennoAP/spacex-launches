@@ -2,6 +2,8 @@
 
 Aplicação em React que exibe informações sobre lançamentos e foguetes da SpaceX utilizando a API pública [SpaceX API](https://github.com/r-spacex/SpaceX-API).
 
+Confira a aplicação funcionando: [Acesse Aqui](https://brennoap.github.io/spacex-launches)   
+
 ## Tecnologias utilizadas
 
 - React
