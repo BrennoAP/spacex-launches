@@ -31,7 +31,10 @@ const router = createBrowserRouter(
         path:"*",
         element:<NotFound/>
         }
-    ]
+    ],
+     {
+    basename: "/spacex-launches", 
+     }
 )
 
 export {router}
